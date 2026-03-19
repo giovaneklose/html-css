@@ -1,0 +1,59 @@
+@charset "UTF-8";
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+    font-family: 'passione';
+    src: url('../fontes/passion-one/passionone.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'sriacha';
+    src: url('../fontes/sriracha/sriracha.ttf') format('truetype');
+}
+
+:root {
+
+    --font-padrão: sans-serif, arial, helvetica;
+    --font-header: 'passione', sans-serif, arial, helvetica;
+    --font-main: 'sriracha', sans-serif, arial, helvetica ;
+}
+
+body {
+    font: normal lighter 1em var(--font-padrão);
+}
+
+header {
+    position: relative;
+    background-color: #000000;
+    height: 300px;
+}
+
+header h1 {
+    position: absolute;
+    font: normal bolder 6em var(--font-header);
+    color: #ffffff;
+
+    left: 50%;
+    top: 50%;
+
+    transform: translate(-50%, -50%);
+}
+
+header p {
+    position: absolute;
+    color: #ffffff;
+
+    left: 50%;
+    top: 50%;
+
+    transform: translate(-50%, 200%);
+}
+
+main {
+    max-width: 1280px;
+    min-width: 280px;
+}
