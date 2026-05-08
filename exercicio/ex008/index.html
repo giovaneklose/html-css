@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagem adaptavel</title>
+    <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon">
+    <style>
+        body{
+            background-color: rgb(255, 0, 0);
+        }
+        h1{
+            font-family: montserrat;
+            font-size:40px;
+        }
+        mark{
+            background-color: rgb(0, 255, 76);
+        }
+    </style>
+</head>
+<body>
+    <h1>Imagem para todos aparelhos</h1>
+    <h2><mark>Exemplo de imagem adaptavel</mark></h2>
+    <picture>
+        <source media="(max-width: 500px)" srcset="imagens/foto.p.jpg" type="image/jpg">
+        <source media="(max-width: 800px)" srcset="imagens/foto.m.jpg" type="image/jpg">
+        <img src="imagens/foto.g.jpg" alt="imagem grande">
+    </picture>
+    <h1>Audio no nosoo site</h1>
+    <h2><mark>Exemplo de audio</mark></h2>
+    <audio controls autoplay loop>
+        <source src="media/nightlove.mp3" type="audio/mp3">
+
+
+    </audio>
+    
+</body>
+</html>

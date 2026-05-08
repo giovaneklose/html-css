@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+body {
+    background-color: blue;
+}
+h1 {
+    background-color: brown;
+    color: aqua;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 50
+    px;
+}
+p {
+    font-family: cursive;
+    color: azure;
+}
