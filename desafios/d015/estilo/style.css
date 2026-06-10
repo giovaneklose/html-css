@@ -22,7 +22,8 @@ main {
 
 #celular {
     position: absolute;
-    background: url('../imagens/frame-iphone.png') no-repeat center center fixed;
+    background: url('../imagens/frame-iphone.png') no-repeat top center fixed;
+    background-size: cover;
 
     left: 50%;
     top: 50%;
@@ -33,6 +34,31 @@ main {
     height: 606px;
 }
 
+#tela {
+    position: relative;
+
+    left: 21px;
+    top: 78px;
+
+    width: 258px;
+    height: 455px;
+}
+
 #rs {
-    
+    text-align: right;
+}
+
+#rs img {
+    width: 50px;
+    box-sizing: border-box;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.466);
+    border-radius: 50%;
+    margin: 20px;
+}
+
+#rs img:hover {
+    border: 2px solid white;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.466);
+    transform: translate(-4px, -6px);
+    transition: transform .5s, border 1s;
 }
