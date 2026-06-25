@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <h1>Exemplo de formulario</h1>
+    <form action="cadastro.php" method="get">
+        <p>
+            <label for="iest">Selecione</label>
+            <select name="est" id="iest">
+                <optiongroup>
+                    <option value="MA">Maranhão</option>
+                    <option value="PB">Pernabunco</option>
+                    <option value="BA">Bahia</option>
+                </optiongroup>
+                <optiongroup>
+                    <option value="MT">Rio do Sul</option>
+                    <option value="PR">Parana</option>
+                    <option value="SC">Santa Catarina</option>
+                </optiongroup>
+                
+            </select>
+        </p>
+
+        <p>
+            <label for="iing">Quais os ingredientis</label>
+            <input type="text" name="ing" id="iing" list="lstiing">
+            <datalist id="lstiing">
+                    <option>Arroz</option>
+                    <option>Feijao</option>
+                    <option>Farinha</option>
+                    <option>Milho</option>
+                    <option>Beteraba</option>
+            </datalist>
+            
+        </p>
+
+        <p>
+            <label for="imsg">Escreva sua mensagem</label><br>
+            <textarea name="msg" id="imsg"></textarea>
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+
+    </form>
+</body>
+</html>
