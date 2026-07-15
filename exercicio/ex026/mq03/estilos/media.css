@@ -1,0 +1,51 @@
+@charset "UTF-8";
+
+@media print {
+    body {
+        background: black url(../imagens/back-print.jpg) no-repeat;
+    }
+
+    #cel {display: none;}
+    #pc {display: none;}
+    #inp {display: block;}
+    #tab {display: none;}
+    #tv {display: none;}
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+
+    body {
+        background: black url(../imagens/back-tablet.jpg) no-repeat;
+    }
+
+    #cel {display: none;}
+    #pc {display: none;}
+    #inp {display: none;}
+    #tab {display: block;}
+    #tv {display: none;}
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+
+    body {
+        background: black url(../imagens/back-pc.jpg) no-repeat;
+    }
+
+    #cel {display: none;}
+    #pc {display: block;}
+    #inp {display: none;}
+    #tab {display: none;}
+    #tv {display: none;}
+}
+
+@media screen and (min-width: 1200px) {
+        body {
+        background: black url(../imagens/back-tv.jpg) no-repeat center center;
+    }
+
+    #cel {display: none;}
+    #pc {display: none;}
+    #inp {display: none;}
+    #tab {display: none;}
+    #tv {display: block;}
+}
