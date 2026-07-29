@@ -10,8 +10,8 @@
 <body>
     <header>
         <h1>Lorem, ipsum.</h1>
-        <span id="itens" class="material-symbols-outlined" onclick="clickMenu"> menu</span>
-        <menu>
+        <span class="material-symbols-outlined" onclick="clickMenu()"> menu</span>
+        <menu id="itens">
             <ul>
                 <li><a href="">Opcao 1</a></li>
                 <li><a href="">Opcao 2</a></li>
@@ -29,14 +29,13 @@
     </main>
 
     <script>
-        function clickMenu() { 
-            var itens = document.getElementByld("itens");
-            if(itens.style.display == 'block'){
-                itens.style.display = "none";
-            } else{
-                itens.style.display = 'block';
-            }
-        }
+        function clickMenu() {
+                var itens = document.getElementById("itens");
+                if (itens.style.display =="block") {itens.style.display = "none";
+                 } else {itens.style.display = "block";
+                            }
+                }
+    
     </script>
 </body>
 </html>
