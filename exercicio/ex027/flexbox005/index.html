@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexble Box</title>
+    <style>
+        #conteiner {
+            display: flex;
+            background-color: antiquewhite;
+            height: 200px;
+            flex-flow: row nowrap;
+            justify-content: space-around;
+            align-items: center;
+            
+        }
+
+        .itens {
+            background-color: blue;
+            border: 1px solid black;
+            text-align: center;
+            padding: 20px;
+
+        }
+    </style>
+</head>
+<body> 
+    <h1>Justify-Content e Align-Itens</h1>
+
+    <h2>Justify-Content</h2>
+
+    <p>O Justify-Content, tem as opções flex-start, flex-end, center, space-evenly, space-around e space-between</p>
+
+    <h2>Align-Itens</h2>
+
+    <p>O Align-Itens, tem as opções stretch, flex-start, flex-end, center</p>
+
+    <div id="conteiner">
+
+        <div class="itens">A</div>
+        <div class="itens">B</div>
+        <div class="itens">C</div>
+        <div class="itens">D</div>
+        <div class="itens">E</div>
+        <div class="itens">F</div>
+        <div class="itens">G</div>
+        <div class="itens">H</div>
+        <div class="itens">I</div>
+        <div class="itens">J</div>
+
+    </div>
+</body>
+</html>
