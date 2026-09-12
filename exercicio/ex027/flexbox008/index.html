@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexble Box</title>
+    <style>
+
+        /*
+        Ordernando itens 
+
+        Para ordernar itens usaremos order ele é na ordem crescente -5, -0, 0, 1, 4, 6.
+        */
+        #conteiner {
+            display: flex;
+
+            background-color: antiquewhite;
+            flex-flow: row wrap;
+
+            align-items: flex-start;
+            
+
+            height: 400px;
+
+        }
+
+        .itens {
+            background-color: blue;
+            border: 1px solid black;
+            text-align: center;
+
+            padding: 20px;
+        }
+
+        #a {
+            order: -4;
+        }
+
+        #b {
+            order: 0;
+        }
+
+        #c {
+            order: -1;
+        }
+
+        #d {
+            order: 7;
+        }
+
+        #e {
+            order: 1;
+        }
+    </style>
+</head>
+<body>
+    <div id="conteiner">
+
+        <div class="itens" id="a">A</div>
+        <div class="itens" id="b">B</div>
+        <div class="itens" id="c">C</div>
+        <div class="itens" id="d">D</div>
+        <div class="itens" id="e">E</div>
+        <div class="itens" id="f">F</div>
+        <div class="itens" id="g">G</div>
+        <div class="itens" id="h">H</div>
+        <div class="itens" id="i">I</div>
+        
+
+    </div>
+</body>
+</html>

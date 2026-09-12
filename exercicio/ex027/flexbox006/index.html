@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Box</title>
+    <style>
+
+        /*--
+        Centralixação absoluta
+
+        Para centralizar usaremos apenas o justify-content e align-items em center
+        --*/
+
+        body {
+            background-color: aqua;
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+
+        main {
+            display: flex;
+            
+            background-color: black;
+
+            justify-content: center;
+            align-items: center;
+
+            width: 100vw;
+            height: 100vh;
+        }
+
+        section {
+            background-color: red;
+
+            width: 200px;
+            height: 200px;
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <main>
+        <section></section>
+    </main>
+</body>
+</html>
