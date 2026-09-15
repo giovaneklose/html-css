@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexble Box</title>
+    <style>
+
+        /*
+
+        Flex-Shrink
+        Ele servi para encolher os itens ou não
+
+        Flex-Grow
+        Ele servi para crescer os itens ou não
+
+        */
+
+        #conteiner {
+            display: flex;
+
+            background-color: antiquewhite;
+        }
+
+        .itens {
+            background-color: blue;
+            border: 1px solid black;
+            text-align: center;
+
+            flex-basis: 200px;
+            flex-shrink: 1; 
+            flex-grow: 0;
+        }
+
+        #conteiner2 {
+            display: flex;
+
+            background-color: antiquewhite;
+        }
+
+        .itens2 {
+            background-color: blue;
+            border: 1px solid black;
+            text-align: center;
+
+            flex-basis: 200px;
+            flex-shrink: 1; 
+            flex-grow: 1;
+        }
+
+        #conteiner3 {
+            display: flex;
+
+            background-color: antiquewhite;
+        }
+
+        #itens1 {
+            background-color: blue;
+            border: 1px solid black;
+            text-align: center;
+
+            flex-basis: 200px;
+            flex-shrink: 1;
+            flex-grow: 0;
+        }
+
+        #itens2 {
+            background-color: blue;
+            border: 1px solid black;
+            text-align: center;
+
+            flex-basis: 200px;
+            flex-shrink: 1;
+            flex-grow: 2;
+        }
+
+        #itens3 {
+            background-color: blue;
+            border: 1px solid black;
+            text-align: center;
+
+            flex-basis: 200px;
+            flex-shrink: 1;
+            flex-grow: 4;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Valore Padrão</h1>
+
+    <div id="conteiner">
+
+        <div class="itens">A</div>
+        <div class="itens">B</div>
+        <div class="itens">C</div>
+       
+    </div>
+
+    <h1>Valores Para Itens Elastico</h1>
+
+    <div id="conteiner2">
+
+        <div class="itens2">A</div>
+        <div class="itens2">B</div>
+        <div class="itens2">C</div>
+       
+    </div>
+
+    <h1>Valores Diferentes</h1>
+
+    <div id="conteiner3">
+
+        <div id="itens1">A</div>
+        <div id="itens2">B</div>
+        <div id="itens3">C</div>
+       
+    </div>
+</body>
+</html>
