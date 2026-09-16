@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: antiquewhite;
+    width: 100vw;
+    height: 100vh;
+}
+
+header {
+    background-color: black;
+    
+}
+
+header h1 {
+    color: white;
+    padding-bottom: 20px;
+}
+
+a {
+    background-color: antiquewhite;
+    color: black;
+    text-decoration: none;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+a:hover {
+    border: 1px solid black;
+    box-shadow: 1px 1px 10px white;
+    transition-duration: .5s;
+}
+
+main {
+    background-color: white;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.507);
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+}
