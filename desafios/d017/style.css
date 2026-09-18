@@ -14,26 +14,40 @@ body {
 
 header {
     background-color: black;
-    
+    padding: 20px;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
 }
 
 header h1 {
     color: white;
-    padding-bottom: 20px;
+
+    flex: 0 0 200px;
 }
 
-a {
+header > nav {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+}
+
+header > nav > a {
     background-color: antiquewhite;
     color: black;
+    text-align: center;
     text-decoration: none;
     border-radius: 20px;
     padding: 10px;
+    margin: 2px;
 }
 
-a:hover {
-    border: 1px solid black;
+header > nav > a:hover {
+    border: 1px solid rgb(0, 0, 0);
     box-shadow: 1px 1px 10px white;
-    transition-duration: .5s;
+    transition: box-shadow .5s;
 }
 
 main {
