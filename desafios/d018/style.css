@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    font-size: 1em;
+    line-height: 1.5em;
+}
+
+header {
+    padding: 10px;
+}
+
+section.flex-content {
+    
+    background-color: gray;
+}
+
+section.normal{
+    padding: 10px;
+    background-color: gray;
+}
+
+p, h1, h2 {
+    margin: 10px;
+    text-align: justify;
+}
