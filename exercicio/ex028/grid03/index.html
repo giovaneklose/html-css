@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        /**/
+        div.container {
+            border: 3px solid black;
+
+            display: grid;
+            grid-template-rows: 100px 100px 100px;
+            grid-template-columns: 1fr 4fr 1fr;
+            grid-auto-rows: 100px;
+            grid-auto-columns: 100px;
+            grid-auto-flow: row;
+            gap: 5px;
+            place-items: normal normal;
+            place-content: normal normal;
+        }
+
+        .itens {
+            text-align: center;
+            border: 3px solid greenyellow;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="itens">A</div>
+        <div class="itens">B</div>
+        <div class="itens">C</div>
+        <div class="itens">D</div>
+        <div class="itens">E</div>
+        <div class="itens">F</div>
+        <div class="itens">G</div>
+        <div class="itens">H</div>
+        <div class="itens">I</div>
+        <div class="itens">J</div>
+    </div>
+</body>
+</html>
