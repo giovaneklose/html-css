@@ -1,0 +1,27 @@
+@charset "UTF-9";
+
+/*
+Shorthand maximo do grid row e column com apenas uma linha.
+*/
+
+.container {
+    display: grid;
+    grid-template: repeat(3, 100px) / repeat(4, 1fr);
+    gap: 5px;
+}
+
+.caixa1 {
+    background-color: rgb(163, 204, 16);
+    grid-area: 1 / 1 / 2 / span 4;
+}
+
+.caixa2 {
+    background-color: aqua;
+    grid-area: 2 / 1 / 4 / 3;
+
+}
+
+.caixa3 {
+    background-color: blueviolet;
+    grid-area: 2 / 3 / span 2 / -1;
+}
