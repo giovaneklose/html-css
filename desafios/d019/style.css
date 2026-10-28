@@ -1,30 +1,45 @@
 @charset "UTF-8";
 
-.container {
-    border: 1px solid black;
-
-    display: grid;
-    grid-template: repeat(6, 100px) / 1fr 1fr 1fr 1fr;
-    gap: 10px;
-    grid-auto-rows: 100px;
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
 }
 
-.caixa1 {
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template: 80px 40px 1fr 40px / 1fr 150px;
+    gap: 10px;
+    text-align: center;
+}
+
+.caixa {
+    background-color: lightcoral;
+}
+
+#topo {
     background-color: brown;
     grid-area: 1 / 1 / 2 / -1;
 }
 
-.caixa2 {
+#menu {
     background-color: bisque;
-    grid-area: 2 / 1 / span 4 / -2;
+    grid-area: 2 / 1 / 3 / -1;
 }
 
-.caixa3 {
+#corpo {
     background-color: aquamarine;
-    grid-area: 2 / -2 / -2 / -1;
+    grid-area: 3 / 1 / -2 / -2;
 }
 
-.caixa4 {
+#secun {
     background-color: chartreuse;
-    grid-area: -2 / 1 / auto / -1;
+    grid-area: 3 / 2 / -2 / -1;
+}
+
+#rdp {
+    background-color: blue;
+    grid-area: -2 / 1 / -1 / -1;
 }
